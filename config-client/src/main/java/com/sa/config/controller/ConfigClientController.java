@@ -15,6 +15,6 @@ public class ConfigClientController {
 
     @RequestMapping("/from")
     public String index(){
-        return env.getProperty("from","undefined222");
+        return env.getProperty("from","undefined config");
     }
 }

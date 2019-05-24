@@ -26,6 +26,8 @@
         <module>api-zuul</module>
         <module>config-server</module>
         <module>config-client</module>
+       <!-- <module>trace-1</module>
+        <module>trace-2</module>-->
     </modules>
 
     <properties>
@@ -35,20 +37,10 @@
         <!-- Greenwich.  M1  M2  M3   都存在bug  使用SR1 GA 版 -->
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <fastjson.version>1.2.57</fastjson.version>
+        <zipkin.varsion>2.1.1.RELEASE</zipkin.varsion>
+        <zipkin.zipkin-autoconfigure-ui.varsion>2.12.9</zipkin.zipkin-autoconfigure-ui.varsion>
+        <zipkin.server>2.12.9</zipkin.server>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>

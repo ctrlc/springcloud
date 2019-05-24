@@ -13,7 +13,7 @@ public class ConfigClientController {
     @Autowired
     private Environment env;
 
-    @RequestMapping("/from")
+//    @RequestMapping("/from")
     public String index(){
         return env.getProperty("from","undefined config");
     }
